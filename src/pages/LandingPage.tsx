@@ -19,12 +19,20 @@ export default function LandingPage() {
             <a href="#about" className="hover:text-purple-600 transition-colors">Tentang</a>
             <a href="#jurusan" className="hover:text-purple-600 transition-colors">Jurusan</a>
             <a href="#prevention" className="hover:text-purple-600 transition-colors">Pencegahan</a>
+            <Link to="/register" className="hover:text-purple-600 transition-colors">Daftar</Link>
           </nav>
-          <Link to="/login">
-            <Button className="bg-purple-600 hover:bg-purple-700 text-white rounded-full px-6">
-              Login Sistem
-            </Button>
-          </Link>
+          <div className="flex items-center gap-3">
+            <Link to="/login">
+              <Button variant="ghost" className="text-purple-600 hover:text-purple-700 hover:bg-purple-50 rounded-full px-6">
+                Login
+              </Button>
+            </Link>
+            <Link to="/register">
+              <Button className="bg-purple-600 hover:bg-purple-700 text-white rounded-full px-6 shadow-lg shadow-purple-200">
+                Daftar Sekarang
+              </Button>
+            </Link>
+          </div>
         </div>
       </header>
 

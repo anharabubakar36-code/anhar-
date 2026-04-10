@@ -71,7 +71,7 @@ export default function AppLayout({ profile }: AppLayoutProps) {
       roles: ["admin"] 
     },
     { 
-      title: "User Management", 
+      title: "Daftar Akun", 
       path: "/app/users", 
       icon: UserCog, 
       roles: ["admin"] 

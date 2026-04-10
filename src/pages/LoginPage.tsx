@@ -94,9 +94,16 @@ export default function LoginPage() {
           </form>
         </Card>
         
-        <p className="text-center mt-8 text-sm text-gray-500">
-          Belum punya akun? <Link to="/register" className="text-purple-600 font-bold hover:underline">Daftar di sini</Link>
-        </p>
+        <div className="mt-8 text-center space-y-4">
+          <p className="text-sm text-gray-500">
+            Belum punya akun?
+          </p>
+          <Link to="/register">
+            <Button variant="outline" className="w-full border-purple-200 text-purple-600 hover:bg-purple-50">
+              Daftar Akun Baru
+            </Button>
+          </Link>
+        </div>
       </motion.div>
     </div>
   );
