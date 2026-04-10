@@ -1,0 +1,5 @@
+{
+  "name": "Sistem Laporan Bullying SMK Prima Unggul",
+  "description": "Aplikasi pelaporan tindakan bullying berbasis website untuk SMK Prima Unggul, terintegrasi dengan Supabase.",
+  "requestFramePermissions": []
+}
