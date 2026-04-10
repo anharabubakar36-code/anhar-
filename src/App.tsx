@@ -28,6 +28,9 @@ export default function App() {
       setSession(session);
       if (session) fetchProfile(session.user.id);
       else setLoading(false);
+    }).catch(err => {
+      console.error("Session fetch error:", err);
+      setLoading(false);
     });
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
